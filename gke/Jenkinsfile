@@ -21,11 +21,12 @@ pipeline {
         PROJECT_ID = "billboard-deploy"
         STAGING_CLUSTER = "billboard-jenkins"
         PROD_CLUSTER = "billboard-jenkins"
-        BUILD_CONTEXT_BUCKET = "${JENK_INT_IT_BUCKET}"
+        BUILD_CONTEXT_BUCKET = "or_example"
         BUILD_CONTEXT = "build-context-${BUILD_ID}.tar.gz"
         APP_NAME = "jenkins-integration-samples-gke"
         GCR_IMAGE = "gcr.io/${PROJECT_ID}/${APP_NAME}:${BUILD_ID}"
         APP_JAR = "${APP_NAME}.jar"
+	JENK_INT_IT_CRED_ID = "${JENK_INT_IT_CRED_ID}"
     }
 
     stages {
