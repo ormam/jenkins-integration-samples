@@ -26,7 +26,7 @@ pipeline {
         APP_NAME = "jenkins-integration-samples-gke"
         GCR_IMAGE = "gcr.io/${PROJECT_ID}/${APP_NAME}:${BUILD_ID}"
         APP_JAR = "${APP_NAME}.jar"
-	JENK_INT_IT_CRED_ID = "${JENK_INT_IT_CRED_ID}"
+	JENK_INT_IT_CRED_ID = "billboards-repositories"
     }
 
     stages {
